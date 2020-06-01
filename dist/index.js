@@ -866,6 +866,7 @@ module.exports = (function(e, t) {
         ];
         r.push(a.join(" "));
       }
+      if (r.length == 0) return;
       try {
         const e = Object.keys(t.data.files)[0];
         await c.gists.update({
@@ -1525,6 +1526,9 @@ module.exports = (function(e, t) {
   },
   215: function(e) {
     e.exports = {
+      _args: [
+        ["@octokit/rest@16.36.0", "C:\\Users\\JF\\Desktop\\works\\waka-box"]
+      ],
       _from: "@octokit/rest@16.36.0",
       _id: "@octokit/rest@16.36.0",
       _inBundle: false,
@@ -1545,12 +1549,10 @@ module.exports = (function(e, t) {
       },
       _requiredBy: ["/"],
       _resolved: "https://registry.npmjs.org/@octokit/rest/-/rest-16.36.0.tgz",
-      _shasum: "99892c57ba632c2a7b21845584004387b56c2cb7",
-      _spec: "@octokit/rest@16.36.0",
-      _where: "/Users/soramorimoto/src/github.com/matchai/waka-box",
+      _spec: "16.36.0",
+      _where: "C:\\Users\\JF\\Desktop\\works\\waka-box",
       author: { name: "Gregor Martynus", url: "https://github.com/gr2m" },
       bugs: { url: "https://github.com/octokit/rest.js/issues" },
-      bundleDependencies: false,
       bundlesize: [{ path: "./dist/octokit-rest.min.js.gz", maxSize: "33 kB" }],
       contributors: [
         { name: "Mike de Boer", email: "info@mikedeboer.nl" },
@@ -1572,7 +1574,6 @@ module.exports = (function(e, t) {
         once: "^1.4.0",
         "universal-user-agent": "^4.0.0"
       },
-      deprecated: false,
       description: "GitHub REST API client for Node.js",
       devDependencies: {
         "@gimenete/type-writer": "^0.1.3",
@@ -2127,8 +2128,8 @@ module.exports = (function(e, t) {
       a[_] +
       "?" +
       ")?)?";
-    var x = u++;
-    a[x] =
+    var k = u++;
+    a[k] =
       "[v=\\s]*(" +
       a[C] +
       ")" +
@@ -2144,10 +2145,10 @@ module.exports = (function(e, t) {
       a[_] +
       "?" +
       ")?)?";
-    var k = u++;
-    a[k] = "^" + a[T] + "\\s*" + a[S] + "$";
+    var x = u++;
+    a[x] = "^" + a[T] + "\\s*" + a[S] + "$";
     var O = u++;
-    a[O] = "^" + a[T] + "\\s*" + a[x] + "$";
+    a[O] = "^" + a[T] + "\\s*" + a[k] + "$";
     var P = u++;
     a[P] =
       "(?:^|[^\\d])" +
@@ -2170,7 +2171,7 @@ module.exports = (function(e, t) {
     var F = u++;
     a[F] = "^" + a[A] + a[S] + "$";
     var B = u++;
-    a[B] = "^" + a[A] + a[x] + "$";
+    a[B] = "^" + a[A] + a[k] + "$";
     var D = u++;
     a[D] = "(?:\\^)";
     var L = u++;
@@ -2180,7 +2181,7 @@ module.exports = (function(e, t) {
     var I = u++;
     a[I] = "^" + a[D] + a[S] + "$";
     var $ = u++;
-    a[$] = "^" + a[D] + a[x] + "$";
+    a[$] = "^" + a[D] + a[k] + "$";
     var H = u++;
     a[H] = "^" + a[T] + "\\s*(" + v + ")$|^$";
     var z = u++;
@@ -2192,13 +2193,13 @@ module.exports = (function(e, t) {
     var K = u++;
     a[K] = "^\\s*(" + a[S] + ")" + "\\s+-\\s+" + "(" + a[S] + ")" + "\\s*$";
     var W = u++;
-    a[W] = "^\\s*(" + a[x] + ")" + "\\s+-\\s+" + "(" + a[x] + ")" + "\\s*$";
+    a[W] = "^\\s*(" + a[k] + ")" + "\\s+-\\s+" + "(" + a[k] + ")" + "\\s*$";
     var X = u++;
     a[X] = "(<|>)?=?\\s*\\*";
-    for (var Y = 0; Y < u; Y++) {
-      r(Y, a[Y]);
-      if (!o[Y]) {
-        o[Y] = new RegExp(a[Y]);
+    for (var J = 0; J < u; J++) {
+      r(J, a[J]);
+      if (!o[J]) {
+        o[J] = new RegExp(a[J]);
       }
     }
     t.parse = parse;
@@ -2465,10 +2466,10 @@ module.exports = (function(e, t) {
       }
     }
     t.compareIdentifiers = compareIdentifiers;
-    var J = /^[0-9]+$/;
+    var Y = /^[0-9]+$/;
     function compareIdentifiers(e, t) {
-      var r = J.test(e);
-      var n = J.test(t);
+      var r = Y.test(e);
+      var n = Y.test(t);
       if (r && n) {
         e = +e;
         t = +t;
@@ -2926,7 +2927,7 @@ module.exports = (function(e, t) {
     }
     function replaceXRange(e, t) {
       e = e.trim();
-      var n = t.loose ? o[O] : o[k];
+      var n = t.loose ? o[O] : o[x];
       return e.replace(n, function(t, n, i, s, o, a) {
         r("xRange", e, t, n, i, s, o, a);
         var u = isX(i);
@@ -3676,6 +3677,7 @@ module.exports = (function(e, t) {
   },
   361: function(e) {
     e.exports = {
+      _args: [["axios@0.19.0", "C:\\Users\\JF\\Desktop\\works\\waka-box"]],
       _from: "axios@0.19.0",
       _id: "axios@0.19.0",
       _inBundle: false,
@@ -3695,16 +3697,13 @@ module.exports = (function(e, t) {
       },
       _requiredBy: ["/"],
       _resolved: "https://registry.npmjs.org/axios/-/axios-0.19.0.tgz",
-      _shasum: "8e09bff3d9122e133f7b8101c8fbdd00ed3d2ab8",
-      _spec: "axios@0.19.0",
-      _where: "/Users/soramorimoto/src/github.com/matchai/waka-box",
+      _spec: "0.19.0",
+      _where: "C:\\Users\\JF\\Desktop\\works\\waka-box",
       author: { name: "Matt Zabriskie" },
       browser: { "./lib/adapters/http.js": "./lib/adapters/xhr.js" },
       bugs: { url: "https://github.com/axios/axios/issues" },
-      bundleDependencies: false,
       bundlesize: [{ path: "./dist/axios.min.js", threshold: "5kB" }],
       dependencies: { "follow-redirects": "1.5.10", "is-buffer": "^2.0.2" },
-      deprecated: false,
       description: "Promise based HTTP client for the browser and node.js",
       devDependencies: {
         bundlesize: "^0.17.0",
@@ -6873,14 +6872,14 @@ module.exports = (function(e, t) {
         if (!q && T.auth) {
           var j = T.auth.split(":");
           var S = j[0] || "";
-          var x = j[1] || "";
-          q = S + ":" + x;
+          var k = j[1] || "";
+          q = S + ":" + k;
         }
         if (q) {
           delete w.Authorization;
         }
-        var k = h.test(C);
-        var O = k ? e.httpsAgent : e.httpAgent;
+        var x = h.test(C);
+        var O = x ? e.httpsAgent : e.httpAgent;
         var P = {
           path: s(T.path, e.params, e.paramsSerializer).replace(/^\?/, ""),
           method: e.method.toUpperCase(),
@@ -6948,7 +6947,7 @@ module.exports = (function(e, t) {
           }
         }
         var $;
-        var H = k && (A ? h.test(A.protocol) : true);
+        var H = x && (A ? h.test(A.protocol) : true);
         if (e.transport) {
           $ = e.transport;
         } else if (e.maxRedirects === 0) {
@@ -13948,8 +13947,8 @@ module.exports = (function(e, t) {
     );
     var j = f.Symbol,
       S = y.splice;
-    var x = getNative(f, "Map"),
-      k = getNative(Object, "create");
+    var k = getNative(f, "Map"),
+      x = getNative(Object, "create");
     var O = j ? j.prototype : undefined,
       P = O ? O.toString : undefined;
     function Hash(e) {
@@ -13962,14 +13961,14 @@ module.exports = (function(e, t) {
       }
     }
     function hashClear() {
-      this.__data__ = k ? k(null) : {};
+      this.__data__ = x ? x(null) : {};
     }
     function hashDelete(e) {
       return this.has(e) && delete this.__data__[e];
     }
     function hashGet(e) {
       var t = this.__data__;
-      if (k) {
+      if (x) {
         var n = t[e];
         return n === r ? undefined : n;
       }
@@ -13977,11 +13976,11 @@ module.exports = (function(e, t) {
     }
     function hashHas(e) {
       var t = this.__data__;
-      return k ? t[e] !== undefined : E.call(t, e);
+      return x ? t[e] !== undefined : E.call(t, e);
     }
     function hashSet(e, t) {
       var n = this.__data__;
-      n[e] = k && t === undefined ? r : t;
+      n[e] = x && t === undefined ? r : t;
       return this;
     }
     Hash.prototype.clear = hashClear;
@@ -14050,7 +14049,7 @@ module.exports = (function(e, t) {
     function mapCacheClear() {
       this.__data__ = {
         hash: new Hash(),
-        map: new (x || ListCache)(),
+        map: new (k || ListCache)(),
         string: new Hash()
       };
     }
@@ -14435,11 +14434,11 @@ module.exports = (function(e, t) {
           ) +
         "$"
     );
-    var x = b.Symbol,
-      k = _.splice;
+    var k = b.Symbol,
+      x = _.splice;
     var O = getNative(b, "Map"),
       P = getNative(Object, "create");
-    var A = x ? x.prototype : undefined,
+    var A = k ? k.prototype : undefined,
       R = A ? A.toString : undefined;
     function Hash(e) {
       var t = -1,
@@ -14500,7 +14499,7 @@ module.exports = (function(e, t) {
       if (r == n) {
         t.pop();
       } else {
-        k.call(t, r, 1);
+        x.call(t, r, 1);
       }
       return true;
     }
